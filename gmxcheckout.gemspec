@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Charge your customers in a monthly basis using gmxCheckout'
   spec.description   = 'A simple and easy to use library to integrate with gmxCheckout'
-  spec.homepage      = 'https://github.com/rainerborene/gmxcheckoR'
+  spec.homepage      = 'https://github.com/rainerborene/gmxcheckout'
   spec.license       = 'MIT'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
