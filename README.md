@@ -1,5 +1,7 @@
 # gmxCheckout
 
+[![Build Status](https://travis-ci.org/rainerborene/gmxcheckout.svg)](https://travis-ci.org/rainerborene/gmxcheckout)
+
 A simple library to charge your customers in a monthly basis using
 [gmxCheckout](https://www.gmxcheckout.com.br/) payment system.
 
@@ -8,7 +10,7 @@ A simple library to charge your customers in a monthly basis using
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gmxcheckout', github: 'rainerborene/gmxcheckout'
+gem 'gmxcheckout'
 ```
 
 And then execute:
@@ -21,13 +23,15 @@ Or install it yourself as:
 
 ## Usage
 
-First you need to configure the api key.
+Start by configuring the required `api_key` in your initializer.
 
 ```ruby
-
+GmxCheckout.configure do |config|
+  config.api_key = ENV['GMXCHECKOUT_API_KEY']
+end
 ```
 
-You might want to use this code in your `User` model on `after_commit` callback.
+Now you might want to use this pseudo-code in your `User` model on `after_commit` callback.
 
 ```ruby
 def charge_credit_card
