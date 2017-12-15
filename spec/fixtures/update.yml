@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.gmxcheckout.com.br/txn/post
+    body:
+      encoding: UTF-8
+      string: cartaoCredito.anoValidade=2030&cartaoCredito.bandeira=visa&cartaoCredito.codSeguranca=123&cartaoCredito.mesValidade=02&cartaoCredito.numero=4532286020241463&empresa.hashEmpresa=128012sad12kva&restApi=true&venda.capturaAuto=false&venda.consumidor.cpf=77266962226&venda.consumidor.nome=Jeanny+Lifewalker&venda.recorrencia.idRecorrencia=145068&venda.valor=100
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache="set-cookie"
+      Content-Language:
+      - pt
+      Content-Type:
+      - text/javascript;charset=ISO-8859-1
+      Date:
+      - Sat, 18 Nov 2017 16:25:52 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips
+      Set-Cookie:
+      - AWSELB=5BB7970112E947D0A5206EB95E8B697E16486BDFA2E79750F4DB99FFF33E8E286CBE4F480E94990670C20469EDDD1F13D9F979AFCA4577A88D90A07BE16E0AAE70820ECECC;PATH=/
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '380'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '"{\"@type\":\"java.util.HashMap\",\"venda.status\":{\"@type\":\"int\",\"value\":1},\"venda.modalidadeVenda\":{\"@type\":\"int\",\"value\":1},\"venda.produto\":null,\"venda.valorCobrado\":\"1.00\",\"venda.arp\":\"BB30I2\",\"restApi\":true,\"venda.cliente.nome\":\"Jeanny Lifewalker\",\"venda.parcelas\":{\"@type\":\"int\",\"value\":1},\"venda.cartaoCredito.numeroMask\":\"************1463\",\"venda.empresa.cieloApiVersao\":\"3.0\",\"venda.eci\":{\"@type\":\"int\",\"value\":3},\"venda.valor\":\"100\",\"venda.adquirente\":\"CIELO\",\"venda.tid\":\"19381002316Y3VF32HQO\",\"venda.idVenda\":{\"@type\":\"int\",\"value\":193810},\"venda.cliente.cpf\":\"77266962226\",\"venda.cartaoCredito.bandeira\":\"visa\",\"venda.idVendaEmpresa\":\"R1849102\",\"venda.nsu\":\"001802\",\"status\":\"success\"}";
+
+'
+    http_version: 
+  recorded_at: Sat, 18 Nov 2017 16:25:55 GMT
+recorded_with: VCR 3.0.3

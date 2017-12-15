@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.gmxcheckout.com.br/txn/post
+    body:
+      encoding: UTF-8
+      string: cartaoCredito.anoValidade=2018&cartaoCredito.bandeira=visa&cartaoCredito.codSeguranca=123&cartaoCredito.mesValidade=05&cartaoCredito.numero=4012001037141112&cartaoCredito.portador=TESTE+TESTE&empresa.hashEmpresa=128012sad12kva&recorrencia.consumidor.cpf=559.343.990-71&recorrencia.consumidor.email=teste%40email.com&recorrencia.consumidor.nome=Teste+consumidor+nome&recorrencia.consumidor.telefone1=%2811%29+1111-11111&recorrencia.modalidaderecorrencia=1&recorrencia.parcelas=1&recorrencia.produto=teste+recorrencia&recorrencia.valor=100&restApi=true
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache="set-cookie"
+      Content-Language:
+      - pt
+      Content-Type:
+      - text/javascript;charset=ISO-8859-1
+      Date:
+      - Fri, 17 Nov 2017 20:18:00 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips
+      Set-Cookie:
+      - AWSELB=5BB7970112E947D0A5206EB95E8B697E16486BDFA22586C5A3D9BE44431FBF61C507C8B5E8CEFD32B3E9B16A4DAC0024C33127A502DB81C65BC654F70C1B431B864319324F;PATH=/
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '601'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '"{\"@type\":\"java.util.HashMap\",\"venda.modalidadeVenda\":{\"@type\":\"int\",\"value\":1},\"recorrencia.idRecorrenciaEmpresa\":\"145054\",\"recorrencia.valorUltimoProcessamento\":null,\"venda.produto\":\"teste
+        recorrencia\",\"msgRetornoAdquirente\":\"Banco emissor indisponivel ou invalido
+        Banco emissor indisponivel. Aguarde alguns instantes e tente novamente.\",\"restApi\":true,\"venda.lrDescricao\":\"Banco
+        emissor indisponivel ou invalido\",\"msgRetorno\":\"Transacao nao aprovada.
+        \",\"venda.lrOrientacao\":\"Banco emissor indisponivel. Aguarde alguns instantes
+        e tente novamente.\",\"recorrencia.cliente.nome\":\"Teste consumidor nome\",\"recorrencia.cliente.telefone1\":\"(11)
+        1111-11111\",\"recorrencia.cliente.cpf\":\"559.343.990-71\",\"venda.valor\":\"100\",\"venda.lr\":\"15\",\"venda.adquirente\":\"CIELO\",\"venda.tid\":\"10934669846L2L0E51HB\",\"venda.cartaoCredito.bandeira\":\"visa\",\"recorrencia.cliente.email\":\"teste@email.com\",\"recorrencia.produto\":\"teste
+        recorrencia\",\"venda.status\":{\"@type\":\"int\",\"value\":6},\"venda.cliente.email\":\"teste@email.com\",\"venda.valorCobrado\":\"1.00\",\"venda.cliente.telefone1\":\"(11)
+        1111-11111\",\"venda.cliente.nome\":\"Teste consumidor nome\",\"venda.parcelas\":{\"@type\":\"int\",\"value\":1},\"venda.cartaoCredito.numeroMask\":\"************1112\",\"venda.empresa.cieloApiVersao\":\"3.0\",\"recorrencia.idRecorrencia\":{\"@type\":\"int\",\"value\":145054},\"recorrencia.status\":{\"@type\":\"int\",\"value\":5},\"venda.idVenda\":{\"@type\":\"int\",\"value\":516078},\"venda.cliente.cpf\":\"559.343.990-71\",\"errors\":{\"@type\":\"java.util.ArrayList\"},\"venda.idVendaEmpresa\":\"R1450541\",\"status\":\"fail\"}";
+
+'
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 20:18:02 GMT
+recorded_with: VCR 3.0.3
